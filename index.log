@@ -1,0 +1,184 @@
+This is LuaHBTeX, Version 1.13.0 (MiKTeX 21.1) (format=lualatex 2026.3.9)  9 MAR 2026 15:29
+ restricted system commands enabled.
+**index.tex
+(./index.tex
+LaTeX2e <2020-10-01> patch level 4
+Lua module: luaotfload 2021-01-08 3.17 Lua based OpenType font support
+Lua module: lualibs 2020-12-30 2.73 ConTeXt Lua standard libraries.
+Lua module: lualibs-extended 2020-12-30 2.73 ConTeXt Lua libraries -- extended c
+ollection.
+luaotfload | conf : Root cache directory is "C:/Users/jshannon/AppData/Local/MiK
+TeX/luatex-cache/generic/names".
+luaotfload | init : Loading fontloader "fontloader-2021-01-07.lua" from kpse-res
+olved path "C:/Program Files/MiKTeX/tex/luatex/luaotfload/fontloader-2021-01-07.
+lua".
+Lua-only attribute luaotfload@noligature = 1
+Lua-only attribute luaotfload@syllabe = 2
+luaotfload | init : Context OpenType loader version 0x1.8e76c8b439581p+1
+Inserting `luaotfload.node_processor' at position 1 in `pre_linebreak_filter'.
+Inserting `luaotfload.node_processor' at position 1 in `hpack_filter'.
+Inserting `luaotfload.glyph_stream' at position 1 in `glyph_stream_provider'.
+Inserting `luaotfload.define_font' at position 1 in `define_font'.
+Lua-only attribute luaotfload_color_attribute = 3
+luaotfload | conf : Root cache directory is "C:/Users/jshannon/AppData/Local/MiK
+TeX/luatex-cache/generic/names".
+Inserting `luaotfload.harf.strip_prefix' at position 1 in `find_opentype_file'.
+Inserting `luaotfload.harf.strip_prefix' at position 1 in `find_truetype_file'.
+Inserting `luaotfload.harf.finalize_vlist' at position 1 in `post_linebreak_filt
+er'.
+Inserting `luaotfload.harf.finalize_hlist' at position 2 in `hpack_filter'.
+Inserting `luaotfload.cleanup_files' at position 1 in `wrapup_run'.
+Inserting `luaotfload.harf.finalize_unicode' at position 1 in `finish_pdffile'.
+Inserting `luaotfload.glyphinfo' at position 1 in `glyph_info'.
+Inserting `luaotfload.aux.set_sscale_dimens' at position 1 in `luaotfload.patch_
+font'.
+Inserting `luaotfload.aux.set_font_index' at position 2 in `luaotfload.patch_fon
+t'.
+Inserting `luaotfload.aux.patch_cambria_domh' at position 3 in `luaotfload.patch
+_font'.
+Inserting `luaotfload.aux.fixup_fontdata' at position 1 in `luaotfload.patch_fon
+t_unsafe'.
+Inserting `luaotfload.aux.set_capheight' at position 4 in `luaotfload.patch_font
+'.
+Inserting `luaotfload.aux.set_xheight' at position 5 in `luaotfload.patch_font'.
+Inserting `luaotfload.rewrite_fontname' at position 6 in `luaotfload.patch_font'
+. L3 programming layer <2021-02-06> xparse <2020-03-03> (C:/Users/jshannon/AppD
+ata/Roaming/MiKTeX/tex/latex/koma-script/scrartcl.cls
+Document Class: scrartcl 2026/02/02 v3.49.2 KOMA-Script document class (article
+)
+(C:/Users/jshannon/AppData/Roaming/MiKTeX/tex/latex/koma-script/scrkbase.sty
+
+LaTeX Warning: You have requested release `2022/06/01' of LaTeX,
+               but only release `2020-10-01' is available.
+
+Package: scrkbase 2026/02/02 v3.49.2 KOMA-Script package (KOMA-Script-dependent
+ basics and keyval usage)
+(C:/Users/jshannon/AppData/Roaming/MiKTeX/tex/latex/koma-script/scrbase.sty
+
+LaTeX Warning: You have requested release `2022/06/01' of LaTeX,
+               but only release `2020-10-01' is available.
+
+Package: scrbase 2026/02/02 v3.49.2 KOMA-Script package (KOMA-Script-independen
+t basics and keyval usage)
+(C:/Users/jshannon/AppData/Roaming/MiKTeX/tex/latex/koma-script/scrlfile.sty
+Package: scrlfile 2026/02/02 v3.49.2 KOMA-Script package (file load hooks)
+
+(C:/Users/jshannon/AppData/Roaming/MiKTeX/tex/latex/koma-script/scrlfile-hook-3
+.34.sty
+Package: scrlfile-hook-3.34 2026/02/02 v3.49.2 KOMA-Script package (using LaTeX
+ hooks)
+
+LaTeX3 Info: Defining command \BeforeFile with sig. 'm' on line 87.
+
+
+LaTeX3 Info: Defining command \AfterFile with sig. 'm' on line 91.
+
+
+LaTeX3 Info: Defining command \BeforeClass with sig. 'm' on line 95.
+
+
+LaTeX3 Info: Defining command \BeforePackage with sig. 'm' on line 99.
+
+
+LaTeX3 Info: Defining command \AfterAtEndOfClass with sig. 'smo+m' on line
+(LaTeX3)     109.
+
+
+LaTeX3 Info: Defining command \AfterAtEndOfPackage with sig. 'smo+m' on line
+(LaTeX3)     119.
+
+
+LaTeX3 Info: Defining command \scrlfile@AfterClass with sig. 'smo+m' on line
+(LaTeX3)     199.
+
+
+LaTeX3 Info: Defining command \AfterClass with sig. '' on line 200.
+
+
+LaTeX3 Info: Defining command \scrlfile@AfterPackage with sig. 'smo+m' on line
+(LaTeX3)     217.
+
+
+LaTeX3 Info: Defining command \AfterPackage with sig. '' on line 218.
+
+
+LaTeX3 Info: Defining command \ReplaceInput with sig. '' on line 219.
+
+
+LaTeX3 Info: Defining command \ReplaceClass with sig. 'mm' on line 222.
+
+
+LaTeX3 Info: Defining command \ReplacePackage with sig. 'mm' on line 225.
+
+
+LaTeX3 Info: Defining command \UnReplaceInput with sig. '' on line 226.
+
+
+LaTeX3 Info: Defining command \UnReplaceClass with sig. 'm' on line 229.
+
+
+LaTeX3 Info: Defining command \UnReplacePackage with sig. 'mm' on line 232.
+
+
+LaTeX3 Info: Defining command \PreventPackageFromLoading with sig. 's+om' on
+(LaTeX3)     line 260.
+
+
+LaTeX3 Info: Defining command \StorePreventPackageFromLoading with sig. 'm' on
+(LaTeX3)     line 268.
+
+
+LaTeX3 Info: Defining command \ResetPreventPackageFromLoading with sig. '' on
+(LaTeX3)     line 273.
+
+
+LaTeX3 Info: Defining command \UnPreventPackageFromLoading with sig. 'sm' on
+(LaTeX3)     line 287.
+
+
+LaTeX3 Info: Defining command \BeforeClosingMainAux with sig. 'om' on line
+(LaTeX3)     300.
+
+
+LaTeX3 Info: Defining command \AfterReadingMainAux with sig. 'om' on line 313.
+
+
+LaTeX3 Info: Defining command \protected@immediate@write with sig. 'm+m+m' on
+(LaTeX3)     line 324.
+
+(C:/Users/jshannon/AppData/Roaming/MiKTeX/tex/latex/koma-script/scrlogo.sty
+Package: scrlogo 2026/02/02 v3.49.2 KOMA-Script package (logo)
+))) ("C:/Program Files/MiKTeX/tex/latex/graphics/keyval.sty"
+Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
+\KV@toks@=\toks15
+)
+Skipping: [2021/05/01] Usage of raw or classic option list on input line 254.
+Applying: [0000/00/00] Usage of raw or classic option list on input line 370.
+)
+
+! Class scrartcl Error: LaTeX kernel too old!
+(scrartcl)              This version of KOMA-Script requires at least
+(scrartcl)              LaTeX 2022-06-01.
+(scrartcl)              You need to either use an older version of
+(scrartcl)              KOMA-Script or update your LaTeX kernel.
+(scrartcl)              Sorry, but this error is fatal.
+(scrartcl)              You cannot continue. Aborting LaTeX run.
+
+See the scrartcl class documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.104 }
+     
+
+Here is how much of LuaTeX's memory you used:
+ 546 strings out of 478819
+ 100000,383344 words of node,token memory allocated
+ 305 words of node memory still in use:
+   1 hlist, 1 dir, 3 kern, 1 glyph, 1 attribute, 39 glue_spec, 1 attribute_list,
+ 2 if_stack nodes
+   avail lists: 2:9,3:3,4:1
+ 20271 multiletter control sequences out of 65536+200000
+ 22 fonts using 2516239 bytes
+ 111i,0n,110p,289b,40s stack positions out of 5000i,500n,10000p,200000b,50000s
+!  ==> Fatal error occurred, no output PDF file produced!

@@ -1,0 +1,346 @@
+% Options for packages loaded elsewhere
+% Options for packages loaded elsewhere
+\PassOptionsToPackage{unicode}{hyperref}
+\PassOptionsToPackage{hyphens}{url}
+\PassOptionsToPackage{dvipsnames,svgnames,x11names}{xcolor}
+%
+\documentclass[
+  letterpaper,
+  DIV=11,
+  numbers=noendperiod]{scrartcl}
+\usepackage{xcolor}
+\usepackage{amsmath,amssymb}
+\setcounter{secnumdepth}{-\maxdimen} % remove section numbering
+\usepackage{iftex}
+\ifPDFTeX
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+  \usepackage{textcomp} % provide euro and other symbols
+\else % if luatex or xetex
+  \usepackage{unicode-math} % this also loads fontspec
+  \defaultfontfeatures{Scale=MatchLowercase}
+  \defaultfontfeatures[\rmfamily]{Ligatures=TeX,Scale=1}
+\fi
+\usepackage{lmodern}
+\ifPDFTeX\else
+  % xetex/luatex font selection
+\fi
+% Use upquote if available, for straight quotes in verbatim environments
+\IfFileExists{upquote.sty}{\usepackage{upquote}}{}
+\IfFileExists{microtype.sty}{% use microtype if available
+  \usepackage[]{microtype}
+  \UseMicrotypeSet[protrusion]{basicmath} % disable protrusion for tt fonts
+}{}
+\makeatletter
+\@ifundefined{KOMAClassName}{% if non-KOMA class
+  \IfFileExists{parskip.sty}{%
+    \usepackage{parskip}
+  }{% else
+    \setlength{\parindent}{0pt}
+    \setlength{\parskip}{6pt plus 2pt minus 1pt}}
+}{% if KOMA class
+  \KOMAoptions{parskip=half}}
+\makeatother
+% Make \paragraph and \subparagraph free-standing
+\makeatletter
+\ifx\paragraph\undefined\else
+  \let\oldparagraph\paragraph
+  \renewcommand{\paragraph}{
+    \@ifstar
+      \xxxParagraphStar
+      \xxxParagraphNoStar
+  }
+  \newcommand{\xxxParagraphStar}[1]{\oldparagraph*{#1}\mbox{}}
+  \newcommand{\xxxParagraphNoStar}[1]{\oldparagraph{#1}\mbox{}}
+\fi
+\ifx\subparagraph\undefined\else
+  \let\oldsubparagraph\subparagraph
+  \renewcommand{\subparagraph}{
+    \@ifstar
+      \xxxSubParagraphStar
+      \xxxSubParagraphNoStar
+  }
+  \newcommand{\xxxSubParagraphStar}[1]{\oldsubparagraph*{#1}\mbox{}}
+  \newcommand{\xxxSubParagraphNoStar}[1]{\oldsubparagraph{#1}\mbox{}}
+\fi
+\makeatother
+
+
+\usepackage{longtable,booktabs,array}
+\usepackage{calc} % for calculating minipage widths
+% Correct order of tables after \paragraph or \subparagraph
+\usepackage{etoolbox}
+\makeatletter
+\patchcmd\longtable{\par}{\if@noskipsec\mbox{}\fi\par}{}{}
+\makeatother
+% Allow footnotes in longtable head/foot
+\IfFileExists{footnotehyper.sty}{\usepackage{footnotehyper}}{\usepackage{footnote}}
+\makesavenoteenv{longtable}
+\usepackage{graphicx}
+\makeatletter
+\newsavebox\pandoc@box
+\newcommand*\pandocbounded[1]{% scales image to fit in text height/width
+  \sbox\pandoc@box{#1}%
+  \Gscale@div\@tempa{\textheight}{\dimexpr\ht\pandoc@box+\dp\pandoc@box\relax}%
+  \Gscale@div\@tempb{\linewidth}{\wd\pandoc@box}%
+  \ifdim\@tempb\p@<\@tempa\p@\let\@tempa\@tempb\fi% select the smaller of both
+  \ifdim\@tempa\p@<\p@\scalebox{\@tempa}{\usebox\pandoc@box}%
+  \else\usebox{\pandoc@box}%
+  \fi%
+}
+% Set default figure placement to htbp
+\def\fps@figure{htbp}
+\makeatother
+
+
+
+
+
+\setlength{\emergencystretch}{3em} % prevent overfull lines
+
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+
+
+
+ 
+
+
+\KOMAoption{captions}{tableheading}
+\makeatletter
+\@ifpackageloaded{caption}{}{\usepackage{caption}}
+\AtBeginDocument{%
+\ifdefined\contentsname
+  \renewcommand*\contentsname{Table of contents}
+\else
+  \newcommand\contentsname{Table of contents}
+\fi
+\ifdefined\listfigurename
+  \renewcommand*\listfigurename{List of Figures}
+\else
+  \newcommand\listfigurename{List of Figures}
+\fi
+\ifdefined\listtablename
+  \renewcommand*\listtablename{List of Tables}
+\else
+  \newcommand\listtablename{List of Tables}
+\fi
+\ifdefined\figurename
+  \renewcommand*\figurename{Figure}
+\else
+  \newcommand\figurename{Figure}
+\fi
+\ifdefined\tablename
+  \renewcommand*\tablename{Table}
+\else
+  \newcommand\tablename{Table}
+\fi
+}
+\@ifpackageloaded{float}{}{\usepackage{float}}
+\floatstyle{ruled}
+\@ifundefined{c@chapter}{\newfloat{codelisting}{h}{lop}}{\newfloat{codelisting}{h}{lop}[chapter]}
+\floatname{codelisting}{Listing}
+\newcommand*\listoflistings{\listof{codelisting}{List of Listings}}
+\makeatother
+\makeatletter
+\makeatother
+\makeatletter
+\@ifpackageloaded{caption}{}{\usepackage{caption}}
+\@ifpackageloaded{subcaption}{}{\usepackage{subcaption}}
+\makeatother
+\usepackage{bookmark}
+\IfFileExists{xurl.sty}{\usepackage{xurl}}{} % add URL line breaks if available
+\urlstyle{same}
+\hypersetup{
+  pdftitle={Placing Archival Maps},
+  colorlinks=true,
+  linkcolor={blue},
+  filecolor={Maroon},
+  citecolor={Blue},
+  urlcolor={Blue},
+  pdfcreator={LaTeX via pandoc}}
+
+
+\title{Placing Archival Maps}
+\usepackage{etoolbox}
+\makeatletter
+\providecommand{\subtitle}[1]{% add subtitle to \maketitle
+  \apptocmd{\@title}{\par {\large #1 \par}}{}{}
+}
+\makeatother
+\subtitle{Assignment 3}
+\author{}
+\date{}
+\begin{document}
+\maketitle
+
+
+\begin{longtable}[]{@{}ll@{}}
+\toprule\noalign{}
+Assigned & Due \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+March 9, 2026 & April 3, 2026 \\
+\end{longtable}
+
+\section{Assignment overview}\label{assignment-overview}
+
+This group assignment asks you to create an ``exhibit'' or product that
+situates the map(s) your group is focusing on within their historical
+and geographic context. Rather than accept these maps as honest and
+straightforward representations of the world, the exhibit/product you
+create should highlight how they were created by people in particular
+positions to achieve a historically and geographically specific set of
+goals. This is not to say you need to pass judgment on these
+goals--being critical does not always mean taking an antagonistic
+position. Rather, your group should help us understand how the map(s)
+you are focusing on reflect choices about what or who should be mapped,
+whose interests should be prioritized, and how to best represent the
+world cartographically.
+
+\subsection{Let's make that more
+concrete!}\label{lets-make-that-more-concrete}
+
+I'm suggesting two main types of products for your group to consider.
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\item
+  \textbf{A virtual exhibit using the ArcGIS Storymap platform}. With
+  this approach, you would include map(s) from your main object along
+  with 6-8 other items from special collections. That would be
+  structured in the following way:
+
+  \begin{enumerate}
+  \def\labelenumii{\arabic{enumii}.}
+  \item
+    A couple of paragraphs providing an \textbf{introduction} to your
+    exhibit. This can include a description of the map(s) that are the
+    main focus, the central theme you want to emphasize about those
+    maps, and anything else that a viewer should keep in mind in looking
+    through the artifacts you've collected.
+  \item
+    \textbf{A} \textbf{photo/image, citation, and caption} for your main
+    map(s) and each artifact in your exhibit. The photo can be from your
+    phone, or you can use a digitized version if available. The citation
+    should be in APA
+    format--\href{https://libguides.csudh.edu/archives-citation/apa}{here's
+    one guide} to using that for archival materials. We will discuss
+    captions in class, but they should be relatively short (no more than
+    a paragraph) and provide notable details/features that viewers
+    should pay attention to and an explanation of how this artifact fits
+    within the broader exhibit.
+    \href{https://drive.google.com/file/d/1QzaDQND_rpnHx2N8SHJnkhxC4VwiNM2T/view?usp=sharing}{Here's
+    one chapter} on writing good captions.
+  \item
+    Lastly, you should have a final section of a few paragraphs that
+    situates the exhibit you've created within \textbf{the context of
+    our class}. What are the connections to our readings thus far in the
+    course? How does this exhibit help sharpen our thinking about the
+    role of maps in urban spaces and urban life? Think of it as an
+    explanation of how your exhibit fits within the museum (our class).~
+  \end{enumerate}
+\item
+  \textbf{A visual mosaic of map(s) from your main item along with other
+  relevant archival materials.} With this approach, think of the
+  conversation we had with Meghan Kelly and the work of Margaret Pearce
+  on maps like
+  ``\href{https://storymaps.arcgis.com/stories/2b5792be16d64f9e999ec93cd436bc17}{They
+  Would Not Take Me There}''. Or you could think of work
+  \href{https://hyperallergic.com/remagining-monuments-to-make-them-resonate-locally-and-personally/}{to
+  reinterpret historical monuments such as confederate statues}here in
+  the Southeast. The goal for those cartographers is using visuals and
+  text to situate maps, to understand the positionalities of mappers and
+  those being mapped. The goal is to show how the map itself is not an
+  objective mirror of reality but a historically and culturally specific
+  visual object. It's to call attention to aspects of these maps we
+  might otherwise take for granted. More concretely, you can either
+  digitally or physically alter your map while also adding archival
+  materials or other text/visuals to help contextualize it. Here, too,
+  you should think about a story you want to tell about your map--how it
+  shows the world in ways that reflect its intended purpose, time, and
+  place. Your group can consider what this might look like. I've got
+  funds to print things out if you want.\\
+  \strut \\
+  If you choose option 2, I'd also ask your group to provide an
+  \textbf{\emph{interpretative guide}} of no more than 2 single spaced
+  pages that provides an introduction to your visual (what's its title?,
+  what's the main focus?) as well as walking us through your design. It
+  should also cite any items your group used (see information on how to
+  do that in choice 1 above)
+\end{enumerate}
+
+\section{Assignment criteria}\label{assignment-criteria}
+
+For either option, I will be assessing your group's project based on the
+following criteria:
+
+\begin{itemize}
+\item
+  Your project should demonstrate your ability to use archival research
+  techniques to locate and interpret materials in UGA's Special
+  Collections library.
+\item
+  Your project should draw upon techniques, approaches, and concepts
+  discussed in our class to this point.
+\item
+  Your project should provide insights into the cultural, political, and
+  historical context for your map(s)
+\item
+  Your project should draw clear and thoughtful connections between the
+  archival materials you include.
+\end{itemize}
+
+I'll be rating all of these criteria on the same scale as other
+assignments (Definitely/good enough/not yet/not addressed), and your
+group will have a chance to revise if the assignment is rated
+incomplete.~
+
+\section{Submission details}\label{submission-details}
+
+This document can be submitted on ELC under Assignments. This can be a
+link to your group's storymap or a digital image file along with your
+interpretive guide
+
+\section{Group topics}\label{group-topics}
+
+\begin{itemize}
+\item
+  \href{https://galileo-uga.primo.exlibrisgroup.com/discovery/fulldisplay?docid=alma9910300523902959&context=L&vid=01GALI_UGA:UGA&lang=en&search_scope=MyInstitution&adaptor=Local\%20Search\%20Engine&tab=LibraryCatalog&query=any,contains,moving\%20ahead\%20with\%20macon\%20&sortby=rank&facet=library,include,2959\%E2\%80\%93530589490002959}{Moving
+  Ahead With Macon}
+
+  \begin{itemize}
+  \item
+    \href{https://github.com/jshannon75/geog4636_mapsandthecity/blob/main/items/MovingAheadWithMacon_map1.pdf}{Scanned
+    map 1}
+  \item
+    \href{https://github.com/jshannon75/geog4636_mapsandthecity/blob/main/items/MovingAheadWithMacon_map2.pdf}{Scanned
+    map 2}
+  \end{itemize}
+\item
+  \href{https://dlg.usg.edu/record/gsu_planatl_22866?canvas=22&x=555&y=755&w=2927}{Techwood
+  neighborhood: Social base map survey of Atlanta, GA}
+\item
+  \href{https://sclfind.libs.uga.edu/catalog/ms4069_aspace_ref83_bqh}{Metropolitan
+  North Georgia Water Planning District records: Nutrient Loading in the
+  Lower Chattahoochee}
+\item
+  \href{https://sclfind.libs.uga.edu/catalog/RBRL180RMC_aspace_ref209_no2}{Rodney
+  Mims Cook papers on Urban Renewal in University Center: Box 10}
+\item
+  \href{https://sclfind.libs.uga.edu/catalog/ms3995_aspace_ref325_i9w}{Georgia
+  Wildlife Federation: Alcovy River Greenway project}
+\item
+  \href{https://dlg.usg.edu/record/guan_1633_014c-001?canvas=0&x=400&y=400&w=1986}{Athens
+  R-51 Urban Renewal Project}
+\item
+  \href{https://sclfind.libs.uga.edu/catalog/ms2901_aspace_ref2200_y3m}{Union,
+  South Carolina: James Hunt plans for low rent housing}
+\end{itemize}
+
+
+
+
+\end{document}

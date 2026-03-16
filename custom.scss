@@ -1,0 +1,35 @@
+/*-- scss:defaults --*/
+$navbar-bg: #800000;  /* Standard maroon */
+$navbar-fg: #ffffff;
+
+/*-- scss:rules --*/
+.navbar {
+  background-color: #800000 !important;
+}
+
+.navbar .navbar-brand,
+.navbar .navbar-nav .nav-link {
+  color: #ffffff !important;
+}
+
+.navbar .navbar-nav .nav-link:hover,
+.navbar .navbar-nav .nav-link:focus {
+  color: #f0f0f0 !important;
+}
+
+/* Sidebar styling */
+#quarto-sidebar {
+  background-color: #e0e0e0 !important;
+}
+
+#quarto-sidebar-navigation .sidebar-item {
+  background-color: #e0e0e0;
+}
+
+#quarto-sidebar-navigation .sidebar-item a {
+  color: #333 !important;
+}
+
+#quarto-sidebar-navigation .sidebar-item a:hover {
+  background-color: #c0c0c0 !important;
+}

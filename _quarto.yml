@@ -1,0 +1,38 @@
+project:
+  type: website
+  output-dir: docs
+
+website:
+  title: "Maps and the City"
+  navbar:
+    left:
+      - text: "Syllabus"
+        href: https://docs.google.com/document/d/1GN-McuqKseNJ8OCBLa-3qRtHZpo6AyBPKMrc3T3nWok/edit?usp=drive_link
+        target: _blank
+      - text: "Schedule"
+        href: https://docs.google.com/spreadsheets/d/1N47u_zzpktZezUWM9yw7F_6u926p7pCnWoEop3wS3og/edit?usp=drive_link
+        target: _blank
+  sidebar:
+  - id: links
+    title: "Other documents"
+    contents:
+      - Coursework
+      - section: "Earlier Assignments"
+        contents:
+          - text: "Reading archival maps"
+            href: https://docs.google.com/document/d/1WPsD_KL9_1M4tnFduOf3xQkMrwWtBgVexBu7LVD_NiA/edit?usp=drive_link
+            target: _blank
+          - text: "Zooming in on Zoning"
+            href: https://docs.google.com/document/d/1s655otYH2-CTeFe27uqxNBwoSgqH0DHeZg11wnhvYkM/edit?usp=drive_link
+            target: _blank
+  page-navigation: true
+  bread-crumbs: true
+
+format:
+  html:
+    theme: 
+      - cosmo
+      - custom.scss
+    toc: true
+    toc-depth: 3
+    number-sections: false

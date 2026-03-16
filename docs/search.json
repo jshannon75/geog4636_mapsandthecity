@@ -1,0 +1,37 @@
+[
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Placing Archival Maps",
+    "section": "",
+    "text": "Assigned\nDue\n\n\n\n\nMarch 9, 2026\nApril 3, 2026"
+  },
+  {
+    "objectID": "index.html#lets-make-that-more-concrete",
+    "href": "index.html#lets-make-that-more-concrete",
+    "title": "Placing Archival Maps",
+    "section": "Let’s make that more concrete!",
+    "text": "Let’s make that more concrete!\nI’m suggesting two main types of products for your group to consider.\n\nA virtual exhibit using the ArcGIS Storymap platform. With this approach, you would include map(s) from your main object along with 6-8 other items from special collections. That would be structured in the following way:\n\nA couple of paragraphs providing an introduction to your exhibit. This can include a description of the map(s) that are the main focus, the central theme you want to emphasize about those maps, and anything else that a viewer should keep in mind in looking through the artifacts you’ve collected.\nA photo/image, citation, and caption for your main map(s) and each artifact in your exhibit. The photo can be from your phone, or you can use a digitized version if available. The citation should be in APA format–here’s one guide to using that for archival materials. We will discuss captions in class, but they should be relatively short (no more than a paragraph) and provide notable details/features that viewers should pay attention to and an explanation of how this artifact fits within the broader exhibit. Here’s one chapter on writing good captions.\nLastly, you should have a final section of a few paragraphs that situates the exhibit you’ve created within the context of our class. What are the connections to our readings thus far in the course? How does this exhibit help sharpen our thinking about the role of maps in urban spaces and urban life? Think of it as an explanation of how your exhibit fits within the museum (our class). \n\nA visual mosaic of map(s) from your main item along with other relevant archival materials. With this approach, think of the conversation we had with Meghan Kelly and the work of Margaret Pearce on maps like “They Would Not Take Me There”. Or you could think of work to reinterpret historical monuments such as confederate statueshere in the Southeast. The goal for those cartographers is using visuals and text to situate maps, to understand the positionalities of mappers and those being mapped. The goal is to show how the map itself is not an objective mirror of reality but a historically and culturally specific visual object. It’s to call attention to aspects of these maps we might otherwise take for granted. More concretely, you can either digitally or physically alter your map while also adding archival materials or other text/visuals to help contextualize it. Here, too, you should think about a story you want to tell about your map–how it shows the world in ways that reflect its intended purpose, time, and place. Your group can consider what this might look like. I’ve got funds to print things out if you want.\n\nIf you choose option 2, I’d also ask your group to provide an interpretative guide of no more than 2 single spaced pages that provides an introduction to your visual (what’s its title?, what’s the main focus?) as well as walking us through your design. It should also cite any items your group used (see information on how to do that in choice 1 above)"
+  },
+  {
+    "objectID": "activity/sample.html",
+    "href": "activity/sample.html",
+    "title": "Sample",
+    "section": "",
+    "text": "Quarto enables you to weave together content and executable code into a finished document. To learn more about Quarto see https://quarto.org."
+  },
+  {
+    "objectID": "activity/sample.html#quarto",
+    "href": "activity/sample.html#quarto",
+    "title": "Sample",
+    "section": "",
+    "text": "Quarto enables you to weave together content and executable code into a finished document. To learn more about Quarto see https://quarto.org."
+  },
+  {
+    "objectID": "activity/sample.html#running-code",
+    "href": "activity/sample.html#running-code",
+    "title": "Sample",
+    "section": "Running Code",
+    "text": "Running Code\nWhen you click the Render button a document will be generated that includes both content and the output of embedded code. You can embed code like this:\n\n1 + 1\n\n[1] 2\n\n\nYou can add options to executable code like this\n\n\n[1] 4\n\n\nThe echo: false option disables the printing of code (only output is displayed)."
+  }
+]
